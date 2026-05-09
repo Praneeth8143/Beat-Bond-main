@@ -24,9 +24,11 @@ const httpServer = createServer(app);
 // Socket.io setup
 const io = new Server(httpServer, {
   cors: {
-    origin: ['http://localhost:5173', 'http://localhost:5174', process.env.CLIENT_URL],
-    methods: ['GET', 'POST'],
-    credentials: true,
+    origin: [
+  'http://localhost:5173',
+  'http://localhost:5174',
+  process.env.CLIENT_URL
+  ].filter(Boolean),
   },
 });
 
@@ -78,3 +80,7 @@ httpServer.listen(PORT, () => {
 });
 
 // restart trigger (force reload .env)
+
+
+
+

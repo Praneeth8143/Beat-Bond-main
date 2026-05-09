@@ -8,7 +8,7 @@ import './index.css';
 import axios from 'axios';
 
 axios.defaults.withCredentials = true;
-axios.defaults.baseURL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+axios.defaults.baseURL = import.meta.env.VITE_API_URL || 'http://localhost:5173';
 
 axios.interceptors.request.use((config) => {
   const userInfoStr = localStorage.getItem('userInfo');

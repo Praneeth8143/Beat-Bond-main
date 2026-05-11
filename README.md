@@ -209,7 +209,7 @@ To run this project on your local machine, follow these steps:
 
 ### 1. Clone the repository
 ```bash
-git clone [https://github.com/Praneeth8143/Beat-Bond.git]
+git clone https://github.com/Praneeth8143/Beat-Bond.git
 cd Beat-Bond
 ```
 
